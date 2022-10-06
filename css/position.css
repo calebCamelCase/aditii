@@ -1,0 +1,367 @@
+/* colors
+navbar #4ccfc1
+logoColor #51c6ab
+primColor #3dc4b6
+bannerColor #3dc4b6
+textAltColor #f6fcfc
+btnColor #3dc4b6
+sliderHover #6ad5cd
+sliderBGColor #cfffff
+bgColor #ffffff
+colophonBG #2ea89b
+*/
+
+/* fonts
+logo 'Lobster', cursive
+mainFont 'Oswald', sans-serif
+*/
+
+:root{
+    --primColor: #3dc4b6;
+    --backgroundColor: #fff;
+    --logo: "Lobster", cursive;
+    --headerTextColor: #a4a4a4;
+    --featuredColor: #3cc3b5;
+    --mainFont: "oswald", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.inner{
+    width: 80%;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* header */
+
+.top-bar-inner{
+    width: 80%;
+    height: 70px;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+
+.logo{
+    margin: 10px;
+    padding: 6px;
+    left: 14%;
+    top: 0;
+    bottom: 0;
+    font-family: var(--logo);
+    text-transform: capitalize;
+    font-weight: 300;
+    /* border: 1px solid blue; */
+}
+
+.logo a{
+    color: #40beb0;
+}
+
+.logo, .search-bar, .cart{
+    position: absolute;
+}
+
+.search-bar{
+    left: 34%;
+    top: 36%;
+    /* border: 1px solid blue; */
+}
+
+input{
+    border: 1px solid #f6f6f6;
+    background-color: #fefefe;
+    width: 480px;
+    height: 26px;
+}
+
+.cart-icon{
+    width: 56px;
+    height: 48px;
+    /* border: 1px solid blue; */
+}
+
+/* .sr-only{
+    border: 1px solid blue;
+} */
+
+.cart{
+    margin: 10px auto;
+    padding: 6px auto;
+    right: 8%;
+    font-family: var(--mainFont);
+    font-size: 24px;
+    color: var(--headerTextColor);
+    /* border: 1px solid blue; */
+}
+
+/* .top-nav-inner{
+    position: relative;
+} */
+
+.top-nav{
+    position: relative;
+    width: 100%;
+    height: 18px;
+    padding-bottom: 10px;
+    background: #4ccfc1;
+    /* border: 1px solid blue; */
+}
+
+.top-nav-list{
+    /* width: 100%; */
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 14%;
+    /* bottom: 1%; */
+    background: #4ccfc1;
+    /* border: 1px solid blue; */
+}
+
+.nav-item{
+    display: inline;
+    margin: 0 8px;
+    padding-right: 18px;
+    font-family: var(--mainFont);
+    text-transform: uppercase;
+    /* border: 1px solid blue; */
+    border-right: 2px solid #d0fcfb;
+}
+
+.nav-item:last-child{
+    border: none;
+    padding-right: 0;
+}
+
+.nav-item a{
+    color: #d0fcfb;
+}
+
+/* close header */
+
+/* main */
+
+/* 
+.banner-section, .banner-inner{
+    border: 1px solid blue; 
+} */
+
+
+.banner-section{
+    position: relative;
+    height: 580px;
+    border: 1px solid var(--primColor);
+}
+
+.banner-inner{
+    position: absolute;
+    margin: 0;
+    width: 98%;
+    height: 400px;
+    background-color: var(--primColor);
+    
+}
+
+.advert-font{
+    position: absolute;
+    right: 600px;
+    top: 54px;
+    width: 260px;
+    color: #f6f6f6;
+    font-family: var(--mainFont);
+    font-size: 40px;
+    text-transform: uppercase;
+    /* border: 1px solid blue; */
+}
+
+.advert{
+    position: absolute;
+    right: 500px;
+    bottom: 140px;
+    width: 360px;
+    color: #f6f6f6;
+    /* border: 1px solid blue; */
+}
+
+.shop-now{
+    position: absolute;
+    right: 764px;
+    bottom: 100px;
+    /* margin: 10px; */
+    padding: 4px 12px;
+    font-family: var(--mainFont);
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #3dc4b6;
+    color: #f6fcfc;
+    border: 3px solid #f6fcfc;
+    border-radius: 5px;
+}
+
+.hero-image{
+    position: absolute;
+    left: 340px;
+    top: 70px;
+    display: block;
+    height: 260px;
+}
+
+.sliders{
+    position: absolute;
+    right: 660px;
+    bottom: 44px;
+    margin: 10px auto;
+    width: 200px;
+    height: 14px;
+    /* border: 1px solid blue; */
+}
+
+.slider{
+    display: inline-block;
+    margin-left: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: #f6fcfc;
+    border: 1px solid #f6fcfc;
+    border-radius: 50%;
+}
+
+.slider:hover{
+    opacity: 60%;
+    background-color: #6ad5cd;
+}
+
+.top-products-section{
+    position: relative;
+    top: 400px;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+.product-preview{
+    position: relative;
+    width: calc(75%/3);
+    height: 140px;
+    margin: 20px 0;
+    padding-right: 30px;
+    /* border: 1px solid blue;  */
+    border-right: 1px solid #c2c4c3;
+}
+
+.product-preview:first-child{
+    position: absolute;
+    left: 120px;
+    top: 0;
+}
+
+.product-preview:nth-child(2){
+    position: absolute;
+    left: 520px;
+    top: 0;
+}
+
+.product-preview:last-child{
+    position: absolute;
+    right: 156px;
+    top: 0;
+    border: none;
+}
+
+.branded-text-top{
+    position: absolute;
+    right: 40px;
+    top: 0;
+    color: #c2c4c3;
+    width: 100px;
+    font-family: var(--mainFont);
+    text-transform: uppercase;
+    font-size: 22px;
+    /* border: 1px solid blue; */
+}
+
+.brand-product{
+    position: absolute;
+    top: 0;
+    left: 70px;
+    height: 138px;
+    /* border: 1px solid blue; */
+}
+
+
+
+.preview-button{
+    margin-top: 20px;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    padding: 4px 12px;
+    font-family: var(--mainFont);
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #3dc4b6;
+    color: #f6fcfc;
+    border: 3px solid #f6fcfc;
+    border-radius: 5px;
+}
+
+
+.products-section, .products-inner{
+    position: relative;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 700px;
+}
+
+.branded-products{
+    position: absolute;
+    /* border: 1px solid blue; */
+    width: calc(100%/6);
+    height: 250px;
+}
+
+.branded-products:nth-child(1){
+    left: 200px;
+    top: 20px;
+}
+
+.branded-products:nth-child(2){
+    left: 600px;
+    top: 20px;
+}
+
+.branded-products:nth-child(3){
+    right: 200px;
+    top: 20px;
+}
+.branded-products:nth-child(4){
+    left: 200px;
+    bottom: 20px;
+}
+.branded-products:nth-child(5){
+    left: 600px;
+    bottom: 20px;
+}
+
+.branded-products:last-child{
+    right: 200px;
+    bottom: 20px;
+}
+/* close main */
+
+/* footer */
+
+/* close footer */
